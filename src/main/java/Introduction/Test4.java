@@ -23,10 +23,11 @@ public class Test4 {
 
         WebElement link = driver.findElement(By.linkText("Cyber Security"));
         builder.moveToElement(link).perform(); // perform the action
+        link.click();
 
         WebElement data = driver.findElement(By.linkText("Big Data"));
         builder.moveToElement(data).perform(); // perform the action
-
+        data.click();
         WebElement visualize = driver.findElement(By.xpath("//a[@class='ga_cat_info_li giTrackElementClpV2'][normalize-space()='BI and Visualization']"));
         builder.moveToElement(visualize).perform(); // perform the action
 
