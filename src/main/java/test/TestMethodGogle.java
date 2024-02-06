@@ -19,9 +19,9 @@ public class TestMethodGogle {
     public void beforetest() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
         driver.get("https://www.google.com/");
+
     }
 
     @Test
@@ -38,11 +38,10 @@ public void find() throws  InterruptedException{
         face.EnterPassword();
         face.ClickOnButton();
     Thread.sleep(2000);
-//li[@class='ajax_block_product col-xs-12 col-sm-6 col-md-4 first-in-line first-item-of-tablet-line first-item-of-mobile-line hovered']//img[@title='Printed Dress']
+
 }
     @AfterTest
     public void close() throws InterruptedException {
         driver.quit();
     }
 }
-//li[@class='ajax_block_product col-xs-12 col-sm-6 col-md-4 first-in-line first-item-of-tablet-line first-item-of-mobile-line hovered']//img[@title='Printed Dress']
