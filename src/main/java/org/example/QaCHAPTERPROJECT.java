@@ -17,7 +17,7 @@ public class QaCHAPTERPROJECT {
         driver.findElement(By.xpath("//button[normalize-space()='Bank Manager Login']")).click();
         driver.findElement(By.xpath("//button[normalize-space()='Add Customer']")).click();
         driver.findElement(By.xpath("//input[@placeholder='First Name']")).sendKeys("Abigail");
-        driver.findElement(By.xpath("git "));
+        driver.findElement(By.xpath(" //input[@placeholder='Last Name']")).sendKeys("Arko");
 
     }
 }
