@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -26,13 +27,13 @@ public class firefoxAnotations7 {
             driver.findElement(By.xpath("//button[@class='btn btn-default button-search']")).click();
         }
 
-        // @AfterTest
-        //public void tearDown() {
-        //  if (driver != null) {
-        //    driver.quit();
-        //  System.out.println("Browser closed");
-        //}
-        //}
+         @AfterTest
+        public void tearDown() {
+          if (driver != null) {
+           driver.quit();
+         System.out.println("Browser closed");
+        }
+        }
     }
 
 

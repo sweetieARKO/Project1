@@ -63,7 +63,7 @@ public class Crossbrowser2 {
         WebElement search = driver.findElement(By.xpath("//input[@class='new-search-inp ui-autocomplete-input"));
         search.sendKeys("Software testing");
 
-        String ActualTitle = driver.getTitle();
+         String ActualTitle = driver.getTitle();
 
 
     }
